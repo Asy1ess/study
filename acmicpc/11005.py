@@ -9,9 +9,9 @@ while n > 0:
 
 for i in range(len(result)):
   if result[i] > 9:
-    result[i] = chr(result[i]+55)
+    result[i] = chr(result[i]+55) # 아스키코드로 변환하여 출력
   else:
-    result[i] = str(result[i])
+    result[i] = str(result[i]) # 그대로 출력
     
 
-print(''.join(result))
+print(''.join(result)) 
