@@ -1,12 +1,8 @@
 import sys
 
-n = int(sys.stdin.readline().rstrip())
-origianllist = list(map(int, sys.stdin.readline().rstrip().split(' ')))
-m = int(sys.stdin.readline().rstrip())
-checklist = list(map(int, sys.stdin.readline().rstrip().split(' ')))
+N = int(sys.stdin.readline().rstrip())
+A = {i: 1 for i in map(int, sys.stdin.readline().rstrip().split())}
+M = int(sys.stdin.readline().rstrip())
 
-for i in checklist:
-    if i in origianllist:
-        print('1')
-    else:
-        print('0')
+for i in list(map(int, sys.stdin.readline().rstrip().split())):
+    print(A.get(i, 0))
